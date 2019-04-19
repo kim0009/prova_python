@@ -1,7 +1,8 @@
 f = [0, 1]
 def fib(n: int) -> int:
-    if(n > (len(f) - 1)):
-        for i in range(len(f), n + 1):
+    size = len(f)
+    if(n > (size - 1)):
+        for i in range(size, n + 1):
             f.append(f[i - 1] + f[i - 2])
     return f[n]
 
@@ -15,7 +16,6 @@ while(i < t):
         result.append(f'Fib({n}) = {fib(n)}')
     else:
         print("Digite um número entre 0 e 60")
-
 
 for i in result:
     print(i)
