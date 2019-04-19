@@ -1,7 +1,6 @@
 f = [0, 1]
 def fib(n: int) -> int:
     if(n > (len(f) - 1)):
-        print("ENTROU")
         for i in range(len(f), n + 1):
             f.append(f[i - 1] + f[i - 2])
     return f[n]
